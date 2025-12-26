@@ -7,7 +7,7 @@ name: MSBuild
 
 on:
   push:
-    branches: [ "main" ]
+    tags: ['*']
   workflow_dispatch:
 
 env:
@@ -29,7 +29,6 @@ permissions:
 jobs:
   build:
     runs-on: windows-latest
-    if: github.ref_type == 'tag'
 
     steps:
     - uses: actions/checkout@v4
