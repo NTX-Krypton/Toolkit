@@ -24,7 +24,9 @@ env:
   BUILD_CONFIGURATION: Release
 
 permissions:
-  contents: [read, write]
+  contents: 
+    read
+    write
 
 jobs:
   build:
