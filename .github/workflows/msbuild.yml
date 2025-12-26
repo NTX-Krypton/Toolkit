@@ -16,7 +16,7 @@ env:
 
   # Files to release after build
   RELEASE_FILES: |
-    ComponentFactory.Krypton.Toolkit.dll
+    dist/ComponentFactory.Krypton.Toolkit.dll
 
   # Configuration type to build.
   # You can convert this to a build matrix if you need coverage of multiple configuration types.
