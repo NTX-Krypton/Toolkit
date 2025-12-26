@@ -24,12 +24,12 @@ env:
   BUILD_CONFIGURATION: Release
 
 permissions:
-  contents: read
+  contents: [read, write]
 
 jobs:
   build:
-    if: github.ref_type == 'tag'
     runs-on: windows-latest
+    if: github.ref_type == 'tag'
 
     steps:
     - uses: actions/checkout@v4
