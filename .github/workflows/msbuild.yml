@@ -33,14 +33,7 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v6
-  
-      - name: Fetch dependency NTX-Krypton/Toolkit
-        uses: foxtrotperry/fetch-file-action@v0-alpha
-        with:
-          url: 'https://github.com/NTX-Krypton/Toolkit/releases/latest/download/ComponentFactory.Krypton.Toolkit.dll'
-          path: ${{github.workspace}}
-          filename: 'ComponentFactory.Krypton.Toolkit.dll'
-  
+        
       - name: Configure MSBuild
         uses: microsoft/setup-msbuild@v1.0.2
 
